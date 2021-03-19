@@ -1,0 +1,12 @@
+<div class="card" *ngIf="cardItem">
+  <div class="card_image">
+    <img [src]="cardItem.image" />
+  </div>
+  <div class="card_content">
+    <h2 class="card_title">{{cardItem.title}}</h2>
+    <p class="card_text">
+        {{cardItem.description}}
+    </p>
+    <button class="btn card_btn">Read More</button>
+  </div>
+</div>
