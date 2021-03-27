@@ -1,8 +1,10 @@
+import { GraphQLModule } from './@graphql/modules/graphql.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CardsModule } from 'cards';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { CardsModule } from 'cards';
   ],
   imports: [
     BrowserModule,
-    CardsModule
+    CardsModule,
+    HttpClientModule,
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]
